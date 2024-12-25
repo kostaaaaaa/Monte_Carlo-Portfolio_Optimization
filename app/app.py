@@ -39,8 +39,8 @@ def update_bar_chart(clickData):
 
     # Portfolio stats
     stats = [
-        html.P(f"Volatility: {volatility:.4f}", style={'font-weight': '600', 'color': '#333'}),
-        html.P(f"Expected Return: {ret:.4f}", style={'font-weight': '600', 'color': '#333'}),
+        html.P(f"Volatility: {volatility*100:.4f}%", style={'font-weight': '600', 'color': '#333'}),
+        html.P(f"Expected Return: {ret*100:.4f}%", style={'font-weight': '600', 'color': '#333'}),
         html.P(f"Sharpe Ratio: {sharpe_ratio:.4f}", style={'font-weight': '600', 'color': '#333'})
     ]
 
